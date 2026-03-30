@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: triet test
+    - name: triet-test
       uses: actions/setup-node@v3
       with:
         node-version: '20.19'
@@ -26,5 +26,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/my-angular-app
-        base_path: /my-angular-app
+        publish_dir: ./dist/triet-test
+        base_path: /triet-test
